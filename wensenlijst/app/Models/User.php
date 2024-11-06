@@ -45,4 +45,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    public function wishes()
+{
+    return $this->hasMany(Wish::class);
+}
+
 }
