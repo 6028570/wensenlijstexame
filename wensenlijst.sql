@@ -1,5 +1,4 @@
-USE wenslijst_db;
-DELETE wishes
-FROM wishes
-LEFT JOIN users ON wishes.user_id = users.id
-WHERE users.id IS NULL;
+DROP TABLE users;
+DROP TABLE migrations;
+DROP TABLE wishes;
+-- Voeg hier eventuele andere tabellen toe die door de migraties zijn gemaakt.
